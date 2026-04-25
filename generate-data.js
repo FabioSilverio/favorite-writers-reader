@@ -28,7 +28,8 @@ const feeds = [
     author: "Adam Tooze",
     outlet: "Chartbook",
     type: "Blog",
-    url: "https://adamtooze.substack.com/feed"
+    url: "https://adamtooze.substack.com/feed",
+    fallbackUrl: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fadamtooze.substack.com%2Ffeed"
   },
   {
     id: "john-ganz",
@@ -79,12 +80,16 @@ await writeFile(
 console.log(`Generated public/data/posts.json with ${posts.length} posts.`);
 
 async function fetchFeed(feed) {
-  const response = await fetch(feed.url, {
-    headers: {
-      "user-agent": "FavoriteWritersReader/1.0 (+local personal RSS reader)",
-      accept: "application/rss+xml, application/xml, text/xml"
+  const response = await fetchFeedUrl(feed.url);
+
+  if (!response.ok && feed.fallbackUrl) {
+    const fallbackResponse = await fetchFeedUrl(feed.fallbackUrl);
+    if (!fallbackResponse.ok) {
+      throw new Error(`${response.status} ${response.statusText}; fallback ${fallbackResponse.status} ${fallbackResponse.statusText}`);
     }
-  });
+
+    return normalizeRss2Json(await fallbackResponse.json(), feed);
+  }
 
   if (!response.ok) {
     throw new Error(`${response.status} ${response.statusText}`);
@@ -96,6 +101,35 @@ async function fetchFeed(feed) {
   const items = asArray(channel.item || channel.entry);
 
   return items.slice(0, 12).map((item) => normalizeItem(item, feed));
+}
+
+function fetchFeedUrl(url) {
+  return fetch(url, {
+    headers: {
+      "user-agent": "FavoriteWritersReader/1.0 (+local personal RSS reader)",
+      accept: "application/rss+xml, application/xml, text/xml, application/json"
+    }
+  });
+}
+
+function normalizeRss2Json(payload, feed) {
+  if (payload.status !== "ok" || !Array.isArray(payload.items)) {
+    throw new Error(payload.message || "Fallback RSS2JSON nao retornou posts.");
+  }
+
+  return payload.items.slice(0, 12).map((item) => ({
+    id: `${feed.id}-${item.link || item.guid || item.title}`,
+    author: feed.author,
+    outlet: feed.outlet,
+    type: feed.type,
+    sourceId: feed.id,
+    sourceUrl: feed.url,
+    title: cleanText(item.title || "Sem titulo"),
+    description: cleanText(item.description || item.content || ""),
+    link: item.link || "",
+    image: item.thumbnail || "",
+    publishedAt: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString()
+  }));
 }
 
 function normalizeItem(item, feed) {
