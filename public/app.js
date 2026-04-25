@@ -1,8 +1,12 @@
+const READ_STORAGE_KEY = "favorite-writers-reader:read-ids";
+
 const state = {
   posts: [],
   authors: new Set(),
+  readIds: loadReadIds(),
   query: "",
   source: "all",
+  readFilter: "all",
   loading: false
 };
 
@@ -12,8 +16,10 @@ const postsEl = document.querySelector("#posts");
 const authorFiltersEl = document.querySelector("#authorFilters");
 const searchInput = document.querySelector("#searchInput");
 const sourceFilters = document.querySelector("#sourceFilters");
+const readFilters = document.querySelector("#readFilters");
 const refreshButton = document.querySelector("#refreshButton");
 const statusText = document.querySelector("#statusText");
+const readCountText = document.querySelector("#readCountText");
 const updatedText = document.querySelector("#updatedText");
 const countBadge = document.querySelector("#countBadge");
 const emptyState = document.querySelector("#emptyState");
@@ -33,6 +39,20 @@ sourceFilters.addEventListener("click", (event) => {
   state.source = button.dataset.source;
   sourceFilters.querySelectorAll("button").forEach((item) => item.classList.toggle("active", item === button));
   render();
+});
+
+readFilters.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  state.readFilter = button.dataset.read;
+  readFilters.querySelectorAll("button").forEach((item) => item.classList.toggle("active", item === button));
+  render();
+});
+
+postsEl.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-read-toggle]");
+  if (!button) return;
+  toggleRead(button.dataset.readToggle);
 });
 
 async function loadPosts(force = false) {
@@ -89,36 +109,66 @@ function render() {
       state.source === "all" ||
       post.outlet === state.source ||
       (state.source === "Substack" && post.outlet !== "The New York Times");
+    const read = state.readIds.has(post.id);
+    const matchesRead =
+      state.readFilter === "all" ||
+      (state.readFilter === "read" && read) ||
+      (state.readFilter === "unread" && !read);
     const haystack = `${post.title} ${post.description} ${post.author} ${post.outlet}`.toLowerCase();
     const matchesQuery = !state.query || haystack.includes(state.query);
-    return matchesAuthor && matchesSource && matchesQuery;
+    return matchesAuthor && matchesSource && matchesRead && matchesQuery;
   });
 
   countBadge.textContent = filtered.length;
+  renderReadCount();
   emptyState.classList.toggle("hidden", filtered.length > 0);
   postsEl.innerHTML = filtered.map(renderPost).join("");
 }
 
 function renderPost(post) {
+  const read = state.readIds.has(post.id);
   const image = post.image
     ? `<img class="thumb" src="${post.image}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
     : "";
 
   return `
-    <article class="post ${image ? "" : "no-image"}">
+    <article class="post ${image ? "" : "no-image"} ${read ? "is-read" : ""}">
       <div>
         <div class="post-meta">
           <span class="pill">${escapeHtml(post.author)}</span>
           <span>${escapeHtml(post.outlet)}</span>
           <span>${formatDate(post.publishedAt)}</span>
+          ${read ? '<span class="read-status">Lido</span>' : ""}
         </div>
         <h3><a href="${post.link}" target="_blank" rel="noreferrer">${escapeHtml(post.title)}</a></h3>
         <p>${escapeHtml(post.description || "Sem resumo no feed.")}</p>
-        <a class="read-link" href="${post.link}" target="_blank" rel="noreferrer">Abrir artigo</a>
+        <div class="post-actions">
+          <a class="read-link" href="${post.link}" target="_blank" rel="noreferrer">Abrir artigo</a>
+          <button class="mark-read" type="button" data-read-toggle="${escapeHtml(post.id)}">
+            ${read ? "Marcar como não lido" : "Marcar como lido"}
+          </button>
+        </div>
       </div>
       ${image}
     </article>
   `;
+}
+
+function toggleRead(id) {
+  if (state.readIds.has(id)) {
+    state.readIds.delete(id);
+  } else {
+    state.readIds.add(id);
+  }
+
+  saveReadIds();
+  render();
+}
+
+function renderReadCount() {
+  const readCount = state.posts.filter((post) => state.readIds.has(post.id)).length;
+  const total = state.posts.length;
+  readCountText.textContent = total ? `${readCount} de ${total} marcados como lidos.` : "";
 }
 
 function renderErrors(errors = []) {
@@ -136,6 +186,18 @@ function setLoading(loading) {
   state.loading = loading;
   refreshButton.disabled = loading;
   refreshButton.classList.toggle("loading", loading);
+}
+
+function loadReadIds() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(READ_STORAGE_KEY) || "[]"));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveReadIds() {
+  localStorage.setItem(READ_STORAGE_KEY, JSON.stringify([...state.readIds]));
 }
 
 function formatDate(value) {

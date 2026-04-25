@@ -10,7 +10,7 @@
     <header class="topbar">
       <div>
         <p class="eyebrow">Reader pessoal</p>
-        <h1>Últimas colunas e posts dos seus autores</h1>
+        <h1>&Uacute;ltimas colunas e posts dos seus autores</h1>
       </div>
       <button class="icon-button" id="refreshButton" type="button" aria-label="Atualizar feeds" title="Atualizar feeds">
         <span aria-hidden="true">↻</span>
@@ -21,7 +21,7 @@
       <aside class="sidebar" aria-label="Filtros">
         <div class="search-wrap">
           <label for="searchInput">Buscar</label>
-          <input id="searchInput" type="search" placeholder="Tema, título, autor..." autocomplete="off" />
+          <input id="searchInput" type="search" placeholder="Tema, t&iacute;tulo, autor..." autocomplete="off" />
         </div>
 
         <section>
@@ -38,9 +38,19 @@
           </div>
         </section>
 
+        <section>
+          <h2>Leitura</h2>
+          <div class="segmented" id="readFilters">
+            <button class="active" type="button" data-read="all">Tudo</button>
+            <button type="button" data-read="unread">N&atilde;o lidos</button>
+            <button type="button" data-read="read">Lidos</button>
+          </div>
+        </section>
+
         <section class="meta-panel">
           <h2>Status</h2>
           <p id="statusText">Carregando feeds...</p>
+          <p class="small" id="readCountText"></p>
           <p class="small" id="updatedText"></p>
         </section>
       </aside>

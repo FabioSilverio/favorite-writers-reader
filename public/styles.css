@@ -239,6 +239,15 @@ input:focus {
   box-shadow: 0 10px 26px rgba(57, 48, 35, 0.08);
 }
 
+.post.is-read {
+  background: rgba(246, 242, 234, 0.72);
+}
+
+.post.is-read h3,
+.post.is-read p {
+  color: var(--muted);
+}
+
 .post.no-image {
   grid-template-columns: 1fr;
 }
@@ -254,6 +263,11 @@ input:focus {
 
 .pill {
   color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.read-status {
+  color: var(--gold);
   font-weight: 800;
 }
 
@@ -289,6 +303,29 @@ input:focus {
   color: var(--rose);
   font-size: 14px;
   font-weight: 800;
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.mark-read {
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--accent-strong);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.mark-read:hover {
+  border-color: var(--accent);
 }
 
 .thumb {
