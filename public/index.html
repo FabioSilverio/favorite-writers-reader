@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leituras favoritas</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Reader pessoal</p>
+        <h1>Últimas colunas e posts dos seus autores</h1>
+      </div>
+      <button class="icon-button" id="refreshButton" type="button" aria-label="Atualizar feeds" title="Atualizar feeds">
+        <span aria-hidden="true">↻</span>
+      </button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="Filtros">
+        <div class="search-wrap">
+          <label for="searchInput">Buscar</label>
+          <input id="searchInput" type="search" placeholder="Tema, título, autor..." autocomplete="off" />
+        </div>
+
+        <section>
+          <h2>Autores</h2>
+          <div class="filter-list" id="authorFilters"></div>
+        </section>
+
+        <section>
+          <h2>Fonte</h2>
+          <div class="segmented" id="sourceFilters">
+            <button class="active" type="button" data-source="all">Tudo</button>
+            <button type="button" data-source="The New York Times">NYT</button>
+            <button type="button" data-source="Substack">Substack</button>
+          </div>
+        </section>
+
+        <section class="meta-panel">
+          <h2>Status</h2>
+          <p id="statusText">Carregando feeds...</p>
+          <p class="small" id="updatedText"></p>
+        </section>
+      </aside>
+
+      <section class="feed-area">
+        <div class="feed-head">
+          <div>
+            <p class="eyebrow">Linha do tempo</p>
+            <h2 id="resultTitle">Artigos recentes</h2>
+          </div>
+          <span class="count" id="countBadge">0</span>
+        </div>
+
+        <div class="error-strip hidden" id="errorStrip"></div>
+        <div class="posts" id="posts"></div>
+        <div class="empty hidden" id="emptyState">
+          <h3>Nada encontrado</h3>
+          <p>Tente limpar a busca ou selecionar mais autores.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
