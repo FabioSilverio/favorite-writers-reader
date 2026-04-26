@@ -26,14 +26,18 @@ const liveFeeds = [
     author: "Adam Tooze",
     outlet: "Chartbook",
     type: "Blog",
-    url: "https://adamtooze.substack.com/feed"
+    url: "https://adamtooze.substack.com/feed",
+    proxyUrl: "https://cors.eu.org/https://adamtooze.substack.com/feed",
+    readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://adamtooze.substack.com/feed"
   },
   {
     id: "john-ganz",
     author: "John Ganz",
     outlet: "Unpopular Front",
     type: "Blog",
-    url: "https://www.unpopularfront.news/feed"
+    url: "https://www.unpopularfront.news/feed",
+    proxyUrl: "https://cors.eu.org/https://www.unpopularfront.news/feed",
+    readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://www.unpopularfront.news/feed"
   },
   {
     id: "nick-catoggio",
@@ -47,7 +51,9 @@ const liveFeeds = [
     author: "Max Read",
     outlet: "Read Max",
     type: "Blog",
-    url: "https://maxread.substack.com/feed"
+    url: "https://maxread.substack.com/feed",
+    proxyUrl: "https://cors.eu.org/https://maxread.substack.com/feed",
+    readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://maxread.substack.com/feed"
   }
 ];
 
@@ -166,6 +172,22 @@ async function fetchLivePosts() {
 }
 
 async function fetchLiveFeed(feed) {
+  if (feed.proxyUrl) {
+    try {
+      return await fetchProxyFeed(feed);
+    } catch {
+      // Try the reader fallback next.
+    }
+  }
+
+  if (feed.readerUrl) {
+    try {
+      return await fetchReaderPosts(feed);
+    } catch {
+      // Fall through to rss2json so one proxy hiccup does not break refresh.
+    }
+  }
+
   const url = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`;
   const response = await fetch(url);
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
@@ -188,6 +210,114 @@ async function fetchLiveFeed(feed) {
     image: item.thumbnail || "",
     publishedAt: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString()
   }));
+}
+
+async function fetchProxyFeed(feed) {
+  const response = await fetch(feed.proxyUrl, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+
+  const xml = await response.text();
+  const doc = new DOMParser().parseFromString(xml, "application/xml");
+  if (doc.querySelector("parsererror")) throw new Error("XML invalido.");
+
+  return [...doc.querySelectorAll("item")].slice(0, 12).map((item) => {
+    const title = textFromNode(item, "title") || "Sem titulo";
+    const link = textFromNode(item, "link");
+    const rawDate = textFromNode(item, "pubDate");
+    const description = textFromNode(item, "description") || textFromNode(item, "content\\:encoded");
+    return {
+      id: `${feed.id}-${link || title}`,
+      author: feed.author,
+      outlet: feed.outlet,
+      type: feed.type,
+      sourceId: feed.id,
+      sourceUrl: feed.url,
+      title: cleanText(title),
+      description: cleanText(description),
+      link,
+      image: "",
+      publishedAt: rawDate ? new Date(rawDate).toISOString() : new Date().toISOString()
+    };
+  });
+}
+
+function textFromNode(node, selector) {
+  return node.querySelector(selector)?.textContent?.trim() || "";
+}
+
+async function fetchReaderPosts(feed) {
+  const response = await fetch(`${feed.readerUrl}?t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+
+  const markdown = await response.text();
+  const shellPosts = parseReaderFeed(markdown).slice(0, 12);
+  const hydrated = await Promise.all(
+    shellPosts.map((post) => hydrateReaderPost(post, feed).catch(() => post))
+  );
+
+  return hydrated.map((post) => ({
+    id: `${feed.id}-${post.link}`,
+    author: feed.author,
+    outlet: feed.outlet,
+    type: feed.type,
+    sourceId: feed.id,
+    sourceUrl: feed.url,
+    title: post.title || titleFromUrl(post.link),
+    description: post.description || "",
+    link: post.link,
+    image: post.image || "",
+    publishedAt: post.publishedAt
+  }));
+}
+
+function parseReaderFeed(markdown) {
+  const posts = [];
+  const regex = /\[https:\/\/[^\]]+\]\((https:\/\/[^)]+)\)\s+([A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} GMT)/g;
+  let match;
+
+  while ((match = regex.exec(markdown))) {
+    posts.push({
+      link: match[1],
+      publishedAt: new Date(match[2]).toISOString()
+    });
+  }
+
+  return posts;
+}
+
+async function hydrateReaderPost(post, feed) {
+  const response = await fetch(`https://r.jina.ai/http://r.jina.ai/http://${post.link}`, { cache: "no-store" });
+  if (!response.ok) return post;
+
+  const markdown = await response.text();
+  const title = markdown.match(/^Title:\s*(.+)$/m)?.[1]?.trim();
+  const published = markdown.match(/^Published Time:\s*(.+)$/m)?.[1]?.trim();
+  const description = firstUsefulParagraph(markdown, feed.author);
+
+  return {
+    ...post,
+    title,
+    image: "",
+    description,
+    publishedAt: published ? new Date(published).toISOString() : post.publishedAt
+  };
+}
+
+function titleFromUrl(url) {
+  const slug = url.split("/").filter(Boolean).pop() || "Sem titulo";
+  return slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function firstUsefulParagraph(markdown, author) {
+  const body = markdown.split("Markdown Content:")[1] || "";
+  const paragraphs = body
+    .split(/\n{2,}/)
+    .map((item) => cleanText(item))
+    .filter((item) => item && !item.startsWith("Image ") && !item.includes(author) && item.length > 40);
+
+  return paragraphs[0] || "";
 }
 
 function renderAuthorFilters() {

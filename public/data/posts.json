@@ -1,18 +1,18 @@
 {
-  "fetchedAt": "2026-04-26T11:43:37.168Z",
+  "fetchedAt": "2026-04-26T12:02:16.944Z",
   "posts": [
     {
-      "id": "john-ganz-https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
-      "author": "John Ganz",
-      "outlet": "Unpopular Front",
+      "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-443-hard-working-hegemon",
+      "author": "Adam Tooze",
+      "outlet": "Chartbook",
       "type": "Blog",
-      "sourceId": "john-ganz",
-      "sourceUrl": "https://www.unpopularfront.news/feed",
-      "title": "Life on Mars; Monopoly Menace; The Meme Bomb",
-      "description": "Reading, Watching 04.26.26",
-      "link": "https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
-      "image": "https://substackcdn.com/image/fetch/$s_!T4mk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa38012ed-7775-4eb0-b926-f4c406adf05f_960x736.jpeg",
-      "publishedAt": "2026-04-26T11:08:01.000Z"
+      "sourceId": "adam-tooze",
+      "sourceUrl": "https://adamtooze.substack.com/feed",
+      "title": "Chartbook 443 Hard-working hegemon? Why 21st-century America is not like Edwardian Britain.",
+      "description": "... or the ironies of neo-Hobsonian analysis.",
+      "link": "https://adamtooze.substack.com/p/chartbook-443-hard-working-hegemon",
+      "image": "https://substackcdn.com/image/fetch/$s_!hAR-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbbf5eda7-4900-44c5-9086-9498603888e5_1746x1100.png",
+      "publishedAt": "2026-04-26T11:51:03.000Z"
     },
     {
       "id": "david-french-https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
@@ -25,7 +25,20 @@
       "description": "The world is looking to Volodymyr Zelensky for leadership.",
       "link": "https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
       "image": "",
-      "publishedAt": "2026-04-26T11:00:06.000Z"
+      "publishedAt": "2026-04-26T11:50:24.000Z"
+    },
+    {
+      "id": "john-ganz-https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
+      "author": "John Ganz",
+      "outlet": "Unpopular Front",
+      "type": "Blog",
+      "sourceId": "john-ganz",
+      "sourceUrl": "https://www.unpopularfront.news/feed",
+      "title": "Life on Mars; Monopoly Menace; The Meme Bomb",
+      "description": "Reading, Watching 04.26.26",
+      "link": "https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
+      "image": "https://substackcdn.com/image/fetch/$s_!T4mk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa38012ed-7775-4eb0-b926-f4c406adf05f_960x736.jpeg",
+      "publishedAt": "2026-04-26T11:08:01.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/top-links-1084-the-new-normal-in",
@@ -442,19 +455,6 @@
       "link": "https://www.nytimes.com/2026/04/16/opinion/gambling-young-men-porn-society.html",
       "image": "",
       "publishedAt": "2026-04-17T14:32:44.000Z"
-    },
-    {
-      "id": "adam-tooze-https://adamtooze.substack.com/p/top-links-1075-global-uncertainty",
-      "author": "Adam Tooze",
-      "outlet": "Chartbook",
-      "type": "Blog",
-      "sourceId": "adam-tooze",
-      "sourceUrl": "https://adamtooze.substack.com/feed",
-      "title": "Top Links 1075 Global uncertainty. Why global growth in 2025 was so resilient. Guyana's boom & how the Chicago School confronted AIDS.",
-      "description": "Great links, images, and reading from Chartbook Newsletter by Adam Tooze",
-      "link": "https://adamtooze.substack.com/p/top-links-1075-global-uncertainty",
-      "image": "https://substackcdn.com/image/fetch/$s_!uBHh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbbaaed8c-968f-46fb-9e32-a5216de0c2f6_984x988.png",
-      "publishedAt": "2026-04-17T10:34:40.000Z"
     },
     {
       "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/gabbard-blanche-hegseth-trump-cabinet-loyalty/",
