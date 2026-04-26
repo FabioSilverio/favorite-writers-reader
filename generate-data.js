@@ -7,28 +7,32 @@ const feeds = [
     author: "Ross Douthat",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml"
   },
   {
     id: "jamelle-bouie",
     author: "Jamelle Bouie",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml"
   },
   {
     id: "david-french",
     author: "David French",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
   },
   {
     id: "ezra-klein",
     author: "Ezra Klein",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml"
   },
   {
     id: "adam-tooze",
@@ -54,7 +58,8 @@ const feeds = [
     author: "Nick Catoggio",
     outlet: "The Dispatch",
     type: "Colunas",
-    url: "https://thedispatch.com/author/nick-catoggio/feed/"
+    url: "https://thedispatch.com/author/nick-catoggio/feed/",
+    proxyUrl: "https://cors.eu.org/https://thedispatch.com/author/nick-catoggio/feed/"
   },
   {
     id: "max-read",

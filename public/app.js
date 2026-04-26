@@ -5,28 +5,32 @@ const liveFeeds = [
     author: "Ross Douthat",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml"
   },
   {
     id: "jamelle-bouie",
     author: "Jamelle Bouie",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml"
   },
   {
     id: "david-french",
     author: "David French",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
   },
   {
     id: "ezra-klein",
     author: "Ezra Klein",
     outlet: "The New York Times",
     type: "Colunas",
-    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml"
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+    proxyUrl: "https://cors.eu.org/https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml"
   },
   {
     id: "adam-tooze",
@@ -51,7 +55,8 @@ const liveFeeds = [
     author: "Nick Catoggio",
     outlet: "The Dispatch",
     type: "Colunas",
-    url: "https://thedispatch.com/author/nick-catoggio/feed/"
+    url: "https://thedispatch.com/author/nick-catoggio/feed/",
+    proxyUrl: "https://cors.eu.org/https://thedispatch.com/author/nick-catoggio/feed/"
   },
   {
     id: "max-read",
@@ -107,7 +112,7 @@ const countBadge = document.querySelector("#countBadge");
 const emptyState = document.querySelector("#emptyState");
 const errorStrip = document.querySelector("#errorStrip");
 
-loadPosts();
+loadInitialPosts();
 
 refreshButton.addEventListener("click", () => loadPosts(true));
 searchInput.addEventListener("input", (event) => {
@@ -137,6 +142,14 @@ postsEl.addEventListener("click", (event) => {
   toggleRead(button.dataset.readToggle);
 });
 
+async function loadInitialPosts() {
+  try {
+    await loadPosts(false);
+  } finally {
+    loadPosts(true);
+  }
+}
+
 async function loadPosts(force = false) {
   setLoading(true);
 
@@ -149,7 +162,7 @@ async function loadPosts(force = false) {
       renderAuthorFilters();
     }
 
-    statusText.textContent = force ? "Feeds atualizados ao vivo." : "Mostrando o snapshot mais recente publicado.";
+    statusText.textContent = force ? "Feeds atualizados ao vivo." : "Carregando snapshot; atualização ao vivo já vai rodar.";
     updatedText.textContent = `Atualizado em ${formatDateTime(data.fetchedAt)}`;
     renderErrors(data.errors);
     render();
