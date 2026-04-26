@@ -1,6 +1,19 @@
 {
-  "fetchedAt": "2026-04-26T12:02:16.944Z",
+  "fetchedAt": "2026-04-26T17:21:04.694Z",
   "posts": [
+    {
+      "id": "david-french-https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
+      "author": "David French",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "david-french",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
+      "title": "Ukraine Has Picked Up the Torch America Dropped",
+      "description": "The world is looking to Volodymyr Zelensky for leadership.",
+      "link": "https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
+      "image": "",
+      "publishedAt": "2026-04-26T15:54:45.000Z"
+    },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-443-hard-working-hegemon",
       "author": "Adam Tooze",
@@ -13,19 +26,6 @@
       "link": "https://adamtooze.substack.com/p/chartbook-443-hard-working-hegemon",
       "image": "https://substackcdn.com/image/fetch/$s_!hAR-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbbf5eda7-4900-44c5-9086-9498603888e5_1746x1100.png",
       "publishedAt": "2026-04-26T11:51:03.000Z"
-    },
-    {
-      "id": "david-french-https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
-      "author": "David French",
-      "outlet": "The New York Times",
-      "type": "Colunas",
-      "sourceId": "david-french",
-      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
-      "title": "Ukraine Has Picked Up the Torch America Dropped",
-      "description": "The world is looking to Volodymyr Zelensky for leadership.",
-      "link": "https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
-      "image": "",
-      "publishedAt": "2026-04-26T11:50:24.000Z"
     },
     {
       "id": "john-ganz-https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
@@ -54,6 +54,19 @@
       "publishedAt": "2026-04-26T10:01:27.000Z"
     },
     {
+      "id": "ezra-klein-https://www.nytimes.com/2026/04/24/opinion/ezra-klein-podcast-stewart-brand.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Stewart Brand on the Ideals the Tech Industry Forgot",
+      "description": "The counterculture icon Stewart Brand is advocating values that are more countercultural than ever.",
+      "link": "https://www.nytimes.com/2026/04/24/opinion/ezra-klein-podcast-stewart-brand.html",
+      "image": "",
+      "publishedAt": "2026-04-25T19:03:22.000Z"
+    },
+    {
       "id": "ross-douthat-https://www.nytimes.com/2026/04/25/opinion/elon-musk-donald-trump-influence.html",
       "author": "Ross Douthat",
       "outlet": "The New York Times",
@@ -80,6 +93,19 @@
       "publishedAt": "2026-04-25T10:45:50.000Z"
     },
     {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010857817/did-an-acid-trip-inspire-the-first-photo-of-earth.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Did an Acid Trip Inspire the First Photo of Earth?",
+      "description": "How did looking back at the Earth for the first time change humanity’s perspective? The legendary thinker Stewart Brand tells the Opinion columnist Ezra Klein why we need to shift our focus from “looking outward” to the essential, constant work of maintaining our civilizations and the planet itself.",
+      "link": "https://www.nytimes.com/video/opinion/100000010857817/did-an-acid-trip-inspire-the-first-photo-of-earth.html",
+      "image": "",
+      "publishedAt": "2026-04-24T22:40:11.000Z"
+    },
+    {
       "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/hasan-piker-mainstream-left-postliberalism/",
       "author": "Nick Catoggio",
       "outlet": "The Dispatch",
@@ -91,6 +117,32 @@
       "link": "https://thedispatch.com/newsletter/boilingfrogs/hasan-piker-mainstream-left-postliberalism/",
       "image": "https://thedispatch.com/wp-content/uploads/2026/04/Hasan-EricTr-1.jpg?w=1024",
       "publishedAt": "2026-04-24T22:38:36.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010857809/the-prophet-of-silicon-valley.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "The Prophet of Silicon Valley",
+      "description": "Stewart Brand, an author and visionary, deeply influenced the internet era from the 1960s onward. Yet the systems he inspired have become fundamentally unintelligible to their creators. The Opinion columnist Ezra Klein explores the tension between Brand’s “how to” philosophy and the black-box reality of modern A.I. on “The Ezra Klein Show.”",
+      "link": "https://www.nytimes.com/video/opinion/100000010857809/the-prophet-of-silicon-valley.html",
+      "image": "",
+      "publishedAt": "2026-04-24T22:35:08.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010857805/stewart-brand-silicon-valleys-favorite-prophet-on-lifes-most-important-principle.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Stewart Brand, Silicon Valley’s Favorite Prophet, on Life’s Most Important Principle",
+      "description": "The counterculture icon is advocating values that are more countercultural than ever.",
+      "link": "https://www.nytimes.com/video/opinion/100000010857805/stewart-brand-silicon-valleys-favorite-prophet-on-lifes-most-important-principle.html",
+      "image": "",
+      "publishedAt": "2026-04-24T19:40:24.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-443-obscurity-to-notoriety",
@@ -117,6 +169,19 @@
       "link": "https://www.nytimes.com/2026/04/23/opinion/trump-iran-unjust-war-catholicism.html",
       "image": "",
       "publishedAt": "2026-04-24T15:08:55.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Why Are Palantir and OpenAI Scared of Alex Bores?",
+      "description": "Alex Bores is trying to win a congressional seat to represent part of New York City. Here’s why A.I. executives are funding the effort to stop him.",
+      "link": "https://www.nytimes.com/2026/04/21/opinion/ezra-klein-podcast-alex-bores.html",
+      "image": "",
+      "publishedAt": "2026-04-24T14:32:15.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/top-links-1082-chinas-oil-reserves",
@@ -197,6 +262,19 @@
       "publishedAt": "2026-04-23T10:55:23.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/if-americas-so-rich-howd-it-get-so",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "If America's So Rich, How'd It Get So Sad?",
+      "description": "Or: How the 2020s broke our brains",
+      "link": "https://www.derekthompson.org/p/if-americas-so-rich-howd-it-get-so",
+      "image": "https://substackcdn.com/image/fetch/$s_!gAKe!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16200edd-4e29-4729-8d58-4eefbab120d8_1260x893.png",
+      "publishedAt": "2026-04-23T10:01:44.000Z"
+    },
+    {
       "id": "ross-douthat-https://www.nytimes.com/2026/04/21/opinion/israel-us-public-opinion.html",
       "author": "Ross Douthat",
       "outlet": "The New York Times",
@@ -262,6 +340,32 @@
       "publishedAt": "2026-04-22T10:45:51.000Z"
     },
     {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010844899/the-hypocrisy-of-openai-and-palantir.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "The Hypocrisy of OpenAI and Palantir",
+      "description": "A super PAC that’s funded by co-founders of Palantir, OpenAI and Andreessen Horowitz is spending millions on attack ads opposing Alex Bores’s campaign for Congress. On “The Ezra Klein Show,” the New York state assemblyman explains how tech companies have targeted his pro-regulation positions, despite publicly claiming to welcome A.I. oversight.",
+      "link": "https://www.nytimes.com/video/opinion/100000010844899/the-hypocrisy-of-openai-and-palantir.html",
+      "image": "",
+      "publishedAt": "2026-04-22T00:00:32.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010844893/a-real-plan-for-ai-job-losses.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "A Real Plan for A.I. Job Losses",
+      "description": "What if the A.I. boom takes not just your job, but most jobs? The congressional candidate Alex Bores joins the Opinion columnist Ezra Klein to pitch an “A.I. Dividend” — a policy devised to fund a universal basic income if A.I. begins to outmatch human labor.",
+      "link": "https://www.nytimes.com/video/opinion/100000010844893/a-real-plan-for-ai-job-losses.html",
+      "image": "",
+      "publishedAt": "2026-04-21T23:55:44.000Z"
+    },
+    {
       "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/trump-jr-vance-carlson-republican-nominee-2028/",
       "author": "Nick Catoggio",
       "outlet": "The Dispatch",
@@ -273,6 +377,19 @@
       "link": "https://thedispatch.com/newsletter/boilingfrogs/trump-jr-vance-carlson-republican-nominee-2028/",
       "image": "https://thedispatch.com/wp-content/uploads/2026/04/BFogs-421.jpg?w=1024",
       "publishedAt": "2026-04-21T21:52:00.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010844890/why-are-palantir-and-openai-scared-of-alex-bores.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Why Are Palantir and OpenAI Scared of Alex Bores?",
+      "description": "Alex Bores is trying to win a congressional seat to represent part of New York City. Here’s why A.I. executives are funding the effort to stop him.",
+      "link": "https://www.nytimes.com/video/opinion/100000010844890/why-are-palantir-and-openai-scared-of-alex-bores.html",
+      "image": "",
+      "publishedAt": "2026-04-21T11:12:11.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/top-link-1079-the-tanker-convoy-to",
@@ -431,6 +548,32 @@
       "publishedAt": "2026-04-18T10:40:36.000Z"
     },
     {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010839394/our-tax-system-is-bad-for-america.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "Our Tax System Is Bad for America",
+      "description": "Our current tax system isn’t fair, and that is bad for social solidarity, argues the Opinion columnist Ezra Klein. The tax expert Ray Madoff joins him to discuss how a fairer system is a moral necessity.",
+      "link": "https://www.nytimes.com/video/opinion/100000010839394/our-tax-system-is-bad-for-america.html",
+      "image": "",
+      "publishedAt": "2026-04-18T00:32:04.000Z"
+    },
+    {
+      "id": "ezra-klein-https://www.nytimes.com/video/opinion/100000010839393/salaries-are-for-suckers.html",
+      "author": "Ezra Klein",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "ezra-klein",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml",
+      "title": "‘Salaries Are for Suckers’",
+      "description": "How is it possible that a billionaire like Jeff Bezos has a lower tax rate than the average American? The tax expert Ray Madoff joins the Opinion columnist Ezra Klein to explain how the ultra-wealthy pay a disproportionately low amount of federal income taxes in comparison to their overall wealth.",
+      "link": "https://www.nytimes.com/video/opinion/100000010839393/salaries-are-for-suckers.html",
+      "image": "",
+      "publishedAt": "2026-04-17T20:25:28.000Z"
+    },
+    {
       "id": "max-read-https://maxread.substack.com/p/what-corporate-thrillers-tell-us",
       "author": "Max Read",
       "outlet": "Read Max",
@@ -468,6 +611,19 @@
       "link": "https://thedispatch.com/newsletter/boilingfrogs/gabbard-blanche-hegseth-trump-cabinet-loyalty/",
       "image": "https://thedispatch.com/wp-content/uploads/2026/04/YOLO.jpg?w=1024",
       "publishedAt": "2026-04-16T22:48:35.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/the-ai-vibe-shift-is-here",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "The AI Vibe Shift Has Officially Arrived",
+      "description": "We seem to be moving from a period of demand scarcity (not enough customers) to supply scarcity (not enough compute)",
+      "link": "https://www.derekthompson.org/p/the-ai-vibe-shift-is-here",
+      "image": "https://images.unsplash.com/photo-1641302109113-67653c0fd208?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw1fHx0cm9ufGVufDB8fHx8MTc3NjE5ODA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "publishedAt": "2026-04-16T10:08:39.000Z"
     },
     {
       "id": "jamelle-bouie-https://www.nytimes.com/2026/04/15/opinion/trump-iran-power-unitary-executive.html",
@@ -600,6 +756,19 @@
       "publishedAt": "2026-04-09T22:36:49.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/how-zombie-flow-took-over-culture",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "How ‘Zombie Flow’ Took Over Culture",
+      "description": "Or: If you're so smart, why aren't you happier?",
+      "link": "https://www.derekthompson.org/p/how-zombie-flow-took-over-culture",
+      "image": "https://substackcdn.com/image/fetch/$s_!EgXP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07bd6c5e-9f37-4bce-b1bb-93bef4380850_1080x567.jpeg",
+      "publishedAt": "2026-04-09T10:02:28.000Z"
+    },
+    {
       "id": "jamelle-bouie-https://www.nytimes.com/2026/04/04/opinion/trump-wars-iran-birthright-citizenship.html",
       "author": "Jamelle Bouie",
       "outlet": "The New York Times",
@@ -639,6 +808,19 @@
       "publishedAt": "2026-04-08T18:57:41.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/all-the-religious-trends-youre-wrong",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "The Substack-ification of American Religion",
+      "description": "Why young men aren't really going back to church, why liberals are sadder than conservatives, and how \"Substack-ification\" is transforming the future of Christianity, media, and politics",
+      "link": "https://www.derekthompson.org/p/all-the-religious-trends-youre-wrong",
+      "image": "https://substackcdn.com/image/fetch/$s_!oD-i!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F494e9f53-c5f7-4752-8c8f-bf065bf6dd42_1080x885.jpeg",
+      "publishedAt": "2026-04-08T11:45:01.000Z"
+    },
+    {
       "id": "max-read-https://maxread.substack.com/p/talking-the-dark-enlightenment-with",
       "author": "Max Read",
       "outlet": "Read Max",
@@ -650,6 +832,19 @@
       "link": "https://maxread.substack.com/p/talking-the-dark-enlightenment-with",
       "image": "",
       "publishedAt": "2026-04-07T16:09:00.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/why-cost-disease-is-the-secret-force",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "Why 'Cost Disease' Is the Secret Force Behind America's Toxic Solitude",
+      "description": "The screens got cheap. The shared experiences got expensive.",
+      "link": "https://www.derekthompson.org/p/why-cost-disease-is-the-secret-force",
+      "image": "https://substackcdn.com/image/fetch/$s_!zpYL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d947c00-55f0-43ab-bb56-0c69d8645576_1080x571.jpeg",
+      "publishedAt": "2026-04-07T10:03:24.000Z"
     },
     {
       "id": "david-french-https://www.nytimes.com/2026/04/05/opinion/easter-vigil-paschal-candle.html",
@@ -834,6 +1029,19 @@
       "publishedAt": "2026-03-30T11:16:03.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/is-the-smartphone-theory-of-everything",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "Is the Smartphone Theory of Everything Wrong? A Comprehensive Investigation",
+      "description": "Many people believe that the nexus of smartphones, Internet, and social media is to blame for every modern catastrophe. Here's 5,000 words on who's right and who's wrong.",
+      "link": "https://www.derekthompson.org/p/is-the-smartphone-theory-of-everything",
+      "image": "https://substackcdn.com/image/fetch/$s_!gSlm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4a403fa-9e92-4359-9ac6-ec718030f3a7_1033x673.jpeg",
+      "publishedAt": "2026-03-30T10:03:55.000Z"
+    },
+    {
       "id": "max-read-https://maxread.substack.com/p/a-sharp-new-book-on-ai-psyops-and",
       "author": "Max Read",
       "outlet": "Read Max",
@@ -873,6 +1081,19 @@
       "publishedAt": "2026-03-27T15:27:27.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/what-is-anthropic-thinking",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "What Is Anthropic Thinking?",
+      "description": "An interview with Anthropic co-founder Jack Clark on the specter of AI-fueled mass unemployment, the future of agents, and how to raise children in an age of super-intelligence",
+      "link": "https://www.derekthompson.org/p/what-is-anthropic-thinking",
+      "image": "https://images.unsplash.com/photo-1625240752293-00b16d38c512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw1fHx0aGUlMjB0aGlua2VyfGVufDB8fHx8MTc3NDYxNTczMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "publishedAt": "2026-03-27T14:11:16.000Z"
+    },
+    {
       "id": "john-ganz-https://www.unpopularfront.news/p/why-the-clock-broke-america-in-an",
       "author": "John Ganz",
       "outlet": "Unpopular Front",
@@ -897,6 +1118,19 @@
       "link": "https://maxread.substack.com/p/soy-right-ascendant-872",
       "image": "https://substackcdn.com/image/fetch/$s_!Rj2Z!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd258e80f-bdd0-4155-acbd-90efc5c18234_1178x1292.png",
       "publishedAt": "2026-03-26T14:46:09.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "We Haven’t Seen the Worst of What Gambling and Prediction Markets Will Do to America",
+      "description": "I don&#8217;t think people have thought hard enough about how bad this could get.",
+      "link": "https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what",
+      "image": "https://substackcdn.com/image/fetch/$s_!r41H!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd037a2b3-283d-4ef2-92da-b1b95e22e446_1080x683.jpeg",
+      "publishedAt": "2026-03-26T10:01:17.000Z"
     },
     {
       "id": "jamelle-bouie-https://www.nytimes.com/video/opinion/100000010801529/trumps-brute-force-imperialism.html",
@@ -977,6 +1211,19 @@
       "publishedAt": "2026-03-19T13:28:38.000Z"
     },
     {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/yes-ai-is-a-bubble-there-is-no-question",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "‘Yes, AI Is a Bubble. There Is No Question.’",
+      "description": "The evidence that artificial intelligence is a big fat bubble has, confusingly, gotten much stronger and much weaker at the exact same time.",
+      "link": "https://www.derekthompson.org/p/yes-ai-is-a-bubble-there-is-no-question",
+      "image": "https://substackcdn.com/image/fetch/$s_!nvc7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc4ff160-91b1-48fb-a590-84f81cfb019c_1080x846.jpeg",
+      "publishedAt": "2026-03-18T10:01:59.000Z"
+    },
+    {
       "id": "max-read-https://maxread.substack.com/p/a-captivating-enigmatic-period-family",
       "author": "Max Read",
       "outlet": "Read Max",
@@ -988,6 +1235,175 @@
       "link": "https://maxread.substack.com/p/a-captivating-enigmatic-period-family",
       "image": "https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/asisabwjnmetkegqfqnz",
       "publishedAt": "2026-03-17T13:40:48.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/the-most-important-chart-in-ai-is",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "The Most Important Chart in AI Is Also the Most Misunderstood",
+      "description": "When a metric becomes a meme, it gains in popularity what it loses in precision.",
+      "link": "https://www.derekthompson.org/p/the-most-important-chart-in-ai-is",
+      "image": "https://substackcdn.com/image/fetch/$s_!hQ8m!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F866c4a1f-6d63-4ffb-8efa-900e2f1b0b30_1692x1038.png",
+      "publishedAt": "2026-03-17T10:03:07.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/the-pill-that-works-even-when-you",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "Why Can't People Agree on a Shared Set of Facts?",
+      "description": "Nir Eyal on the power of belief, the atheist's case for prayer, and the origins of self-confidence",
+      "link": "https://www.derekthompson.org/p/the-pill-that-works-even-when-you",
+      "image": "https://substackcdn.com/image/fetch/$s_!JyEa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff68978a7-c53d-4634-9e2e-e0af96b5dd31_1080x640.jpeg",
+      "publishedAt": "2026-03-13T12:13:13.000Z"
+    },
+    {
+      "id": "derek-thompson-substack-https://www.derekthompson.org/p/the-global-economic-crisis-of-the",
+      "author": "Derek Thompson",
+      "outlet": "Read Derek",
+      "type": "Blog",
+      "sourceId": "derek-thompson-substack",
+      "sourceUrl": "https://www.derekthompson.org/feed",
+      "title": "This War's Economic Crisis Could Get Much Worse—For the U.S. and the Whole World",
+      "description": "This isn't just about the price of oil. It's about everything oil becomes&#8212;fertilizer, AI chips, plastic&#8212;and the cost of snapping the achilles heel of the global shipping economy",
+      "link": "https://www.derekthompson.org/p/the-global-economic-crisis-of-the",
+      "image": "https://substackcdn.com/image/fetch/$s_!TLTk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F966ec60c-c69f-4b88-8b85-cb3e123020e9_540x312.jpeg",
+      "publishedAt": "2026-03-11T10:03:29.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The Orality Theory of Everything",
+      "description": "The decline of reading and the rise of social media are again transforming what it feels like to be a thinking person.",
+      "link": "https://www.theatlantic.com/ideas/2026/02/social-media-literacy-crisis/686076/",
+      "image": "",
+      "publishedAt": "2026-02-22T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/ideas/2025/11/democrats-cost-of-living-affordability-platform/684847/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The Affordability Curse",
+      "description": "Politics isn’t just about the words you put on your bumper stickers. It’s about what you do if the bumper stickers work.",
+      "link": "https://www.theatlantic.com/ideas/2025/11/democrats-cost-of-living-affordability-platform/684847/",
+      "image": "",
+      "publishedAt": "2025-11-07T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/ideas/archive/2025/09/trump-economic-pain-strategy/684166/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The Era of Step-on-a-Rake Capitalism",
+      "description": "Trumponomics isn’t about economics. It’s about creating pain and demanding tribute.",
+      "link": "https://www.theatlantic.com/ideas/archive/2025/09/trump-economic-pain-strategy/684166/",
+      "image": "",
+      "publishedAt": "2025-09-11T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/politics/archive/2025/06/trump-self-destructive-agenda/683013/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The No. 1 Rule for Understanding Trump",
+      "description": "A lot happens under this administration, but a lot un-happens, too.",
+      "link": "https://www.theatlantic.com/politics/archive/2025/06/trump-self-destructive-agenda/683013/",
+      "image": "",
+      "publishedAt": "2025-06-03T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/ideas/archive/2025/05/maga-maoism-trump/682732/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The Disturbing Rise of MAGA Maoism",
+      "description": "Trump seems to be ceding the future to China while emulating its past.",
+      "link": "https://www.theatlantic.com/ideas/archive/2025/05/maga-maoism-trump/682732/",
+      "image": "",
+      "publishedAt": "2025-05-08T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/economy/archive/2025/04/job-market-youth/682641/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "Something Alarming Is Happening to the Job Market",
+      "description": "A new sign that AI is competing with college grads",
+      "link": "https://www.theatlantic.com/economy/archive/2025/04/job-market-youth/682641/",
+      "image": "",
+      "publishedAt": "2025-04-30T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/economy/archive/2025/04/trade-war-china-trump-tariffs/682500/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "A Trade War With China Is a Very Bad Idea",
+      "description": "Yes, the U.S. has the larger consumer economy. No, that won’t be enough to avoid major (and majorly self-inflicted) pain.",
+      "link": "https://www.theatlantic.com/economy/archive/2025/04/trade-war-china-trump-tariffs/682500/",
+      "image": "",
+      "publishedAt": "2025-04-18T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/economy/archive/2025/04/economic-policy-trump-tariffs/682369/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "Trump Is Burning Down the House",
+      "description": "His tariff plan looks like an abject disaster for America, even judged against the benchmarks the administration has set for itself.",
+      "link": "https://www.theatlantic.com/economy/archive/2025/04/economic-policy-trump-tariffs/682369/",
+      "image": "",
+      "publishedAt": "2025-04-09T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/politics/archive/2025/04/tariffs-trump-outcomes-incompatible/682286/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "There Is Only One Way to Make Sense of the Tariffs",
+      "description": "The policy is absurd. It’s also an extension of Trump’s chaotic personality.",
+      "link": "https://www.theatlantic.com/politics/archive/2025/04/tariffs-trump-outcomes-incompatible/682286/",
+      "image": "",
+      "publishedAt": "2025-04-03T12:00:00.000Z"
+    },
+    {
+      "id": "derek-thompson-atlantic-https://www.theatlantic.com/ideas/archive/2025/04/history-rich-influence-government/682266/",
+      "author": "Derek Thompson",
+      "outlet": "The Atlantic",
+      "type": "Artigos",
+      "sourceId": "derek-thompson-atlantic",
+      "sourceUrl": "https://www.theatlantic.com/author/derek-thompson/",
+      "title": "The Story of the Gilded Age Wasn’t Wealth. It Was Corruption.",
+      "description": "Richard White, the historian and author of _The Republic for Which It Stands_, explains what made the late 19th century gilded.",
+      "link": "https://www.theatlantic.com/ideas/archive/2025/04/history-rich-influence-government/682266/",
+      "image": "",
+      "publishedAt": "2025-04-03T12:00:00.000Z"
     }
   ],
   "errors": []

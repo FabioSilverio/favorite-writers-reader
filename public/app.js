@@ -22,6 +22,13 @@ const liveFeeds = [
     url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
   },
   {
+    id: "ezra-klein",
+    author: "Ezra Klein",
+    outlet: "The New York Times",
+    type: "Colunas",
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/ezra-klein/rss.xml"
+  },
+  {
     id: "adam-tooze",
     author: "Adam Tooze",
     outlet: "Chartbook",
@@ -54,6 +61,24 @@ const liveFeeds = [
     url: "https://maxread.substack.com/feed",
     proxyUrl: "https://cors.eu.org/https://maxread.substack.com/feed",
     readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://maxread.substack.com/feed"
+  },
+  {
+    id: "derek-thompson-substack",
+    author: "Derek Thompson",
+    outlet: "Read Derek",
+    type: "Blog",
+    url: "https://www.derekthompson.org/feed",
+    proxyUrl: "https://cors.eu.org/https://www.derekthompson.org/feed",
+    readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://www.derekthompson.org/feed"
+  },
+  {
+    id: "derek-thompson-atlantic",
+    author: "Derek Thompson",
+    outlet: "The Atlantic",
+    type: "Artigos",
+    url: "https://www.theatlantic.com/author/derek-thompson/",
+    readerUrl: "https://r.jina.ai/http://r.jina.ai/http://https://www.theatlantic.com/author/derek-thompson/",
+    parser: "atlanticAuthor"
   }
 ];
 
@@ -67,7 +92,7 @@ const state = {
   loading: false
 };
 
-const authorOrder = ["Ross Douthat", "Jamelle Bouie", "David French", "Adam Tooze", "John Ganz", "Nick Catoggio", "Max Read"];
+const authorOrder = ["Ross Douthat", "Jamelle Bouie", "David French", "Ezra Klein", "Adam Tooze", "John Ganz", "Nick Catoggio", "Max Read", "Derek Thompson"];
 
 const postsEl = document.querySelector("#posts");
 const authorFiltersEl = document.querySelector("#authorFilters");
@@ -172,6 +197,10 @@ async function fetchLivePosts() {
 }
 
 async function fetchLiveFeed(feed) {
+  if (feed.parser === "atlanticAuthor") {
+    return fetchAtlanticAuthorPosts(feed);
+  }
+
   if (feed.proxyUrl) {
     try {
       return await fetchProxyFeed(feed);
@@ -249,7 +278,7 @@ async function fetchReaderPosts(feed) {
   const response = await fetch(`${feed.readerUrl}?t=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
 
-  const markdown = await response.text();
+  const markdown = (await response.text()).replaceAll("\\n", "\n");
   const shellPosts = parseReaderFeed(markdown).slice(0, 12);
   const hydrated = await Promise.all(
     shellPosts.map((post) => hydrateReaderPost(post, feed).catch(() => post))
@@ -268,6 +297,36 @@ async function fetchReaderPosts(feed) {
     image: post.image || "",
     publishedAt: post.publishedAt
   }));
+}
+
+async function fetchAtlanticAuthorPosts(feed) {
+  const response = await fetch(feed.readerUrl, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+
+  const markdown = (await response.text()).replaceAll("\\n", "\n");
+  const posts = [];
+  const regex = /\d+\.\s+### \[([^\]]+)\]\((https:\/\/www\.theatlantic\.com\/[^)]+)\)\s+([\s\S]*?)\n\n\[Derek Thompson\]\([^)]*\)\s+([A-Z][a-z]+ \d{1,2}, \d{4})/g;
+  let match;
+
+  while ((match = regex.exec(markdown))) {
+    const [, title, link, description, date] = match;
+    posts.push({
+      id: `${feed.id}-${link}`,
+      author: feed.author,
+      outlet: feed.outlet,
+      type: feed.type,
+      sourceId: feed.id,
+      sourceUrl: feed.url,
+      title: cleanText(title),
+      description: cleanText(description),
+      link,
+      image: "",
+      publishedAt: new Date(`${date} 12:00:00 UTC`).toISOString()
+    });
+  }
+
+  if (!posts.length) throw new Error("Atlantic nao retornou artigos.");
+  return posts.slice(0, 12);
 }
 
 function parseReaderFeed(markdown) {
@@ -347,7 +406,10 @@ function render() {
     const matchesSource =
       state.source === "all" ||
       post.outlet === state.source ||
-      (state.source === "Substack" && post.outlet !== "The New York Times" && post.outlet !== "The Dispatch");
+      (state.source === "Substack" &&
+        post.outlet !== "The New York Times" &&
+        post.outlet !== "The Dispatch" &&
+        post.outlet !== "The Atlantic");
     const read = state.readIds.has(post.id);
     const matchesRead =
       state.readFilter === "all" ||
