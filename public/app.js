@@ -34,6 +34,20 @@ const liveFeeds = [
     outlet: "Unpopular Front",
     type: "Blog",
     url: "https://www.unpopularfront.news/feed"
+  },
+  {
+    id: "nick-catoggio",
+    author: "Nick Catoggio",
+    outlet: "The Dispatch",
+    type: "Colunas",
+    url: "https://thedispatch.com/author/nick-catoggio/feed/"
+  },
+  {
+    id: "max-read",
+    author: "Max Read",
+    outlet: "Read Max",
+    type: "Blog",
+    url: "https://maxread.substack.com/feed"
   }
 ];
 
@@ -47,7 +61,7 @@ const state = {
   loading: false
 };
 
-const authorOrder = ["Ross Douthat", "Jamelle Bouie", "David French", "Adam Tooze", "John Ganz"];
+const authorOrder = ["Ross Douthat", "Jamelle Bouie", "David French", "Adam Tooze", "John Ganz", "Nick Catoggio", "Max Read"];
 
 const postsEl = document.querySelector("#posts");
 const authorFiltersEl = document.querySelector("#authorFilters");
@@ -203,7 +217,7 @@ function render() {
     const matchesSource =
       state.source === "all" ||
       post.outlet === state.source ||
-      (state.source === "Substack" && post.outlet !== "The New York Times");
+      (state.source === "Substack" && post.outlet !== "The New York Times" && post.outlet !== "The Dispatch");
     const read = state.readIds.has(post.id);
     const matchesRead =
       state.readFilter === "all" ||

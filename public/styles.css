@@ -159,7 +159,7 @@ input:focus {
 
 .segmented {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
   padding: 4px;
   border: 1px solid var(--line);
   border-radius: 8px;

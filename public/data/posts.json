@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-04-25T20:26:21.916Z",
+  "fetchedAt": "2026-04-26T11:41:39.533Z",
   "posts": [
+    {
+      "id": "john-ganz-https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
+      "author": "John Ganz",
+      "outlet": "Unpopular Front",
+      "type": "Blog",
+      "sourceId": "john-ganz",
+      "sourceUrl": "https://www.unpopularfront.news/feed",
+      "title": "Life on Mars; Monopoly Menace; The Meme Bomb",
+      "description": "Reading, Watching 04.26.26",
+      "link": "https://www.unpopularfront.news/p/life-on-mars-monopoly-menace-the",
+      "image": "https://substackcdn.com/image/fetch/$s_!T4mk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa38012ed-7775-4eb0-b926-f4c406adf05f_960x736.jpeg",
+      "publishedAt": "2026-04-26T11:08:01.000Z"
+    },
+    {
+      "id": "david-french-https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
+      "author": "David French",
+      "outlet": "The New York Times",
+      "type": "Colunas",
+      "sourceId": "david-french",
+      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
+      "title": "Ukraine Has Picked Up the Torch America Dropped",
+      "description": "The world is looking to Volodymyr Zelensky for leadership.",
+      "link": "https://www.nytimes.com/2026/04/26/opinion/zelensky-ukraine-trump-nato-leader.html",
+      "image": "",
+      "publishedAt": "2026-04-26T11:00:06.000Z"
+    },
+    {
+      "id": "adam-tooze-https://adamtooze.substack.com/p/top-links-1084-the-new-normal-in",
+      "author": "Adam Tooze",
+      "outlet": "Chartbook",
+      "type": "Blog",
+      "sourceId": "adam-tooze",
+      "sourceUrl": "https://adamtooze.substack.com/feed",
+      "title": "Top Links 1084 The new normal in America's political economy. Syrian property deals & the Trumps. Burial at sea and the history that made Lee Kuan Yew.",
+      "description": "Great links, images, and reading from Chartbook Newsletter by Adam Tooze",
+      "link": "https://adamtooze.substack.com/p/top-links-1084-the-new-normal-in",
+      "image": "https://substackcdn.com/image/fetch/$s_!jzXB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F30bb7fae-43cd-484e-aa23-b010359dd826_1192x960.png",
+      "publishedAt": "2026-04-26T10:01:27.000Z"
+    },
     {
       "id": "ross-douthat-https://www.nytimes.com/2026/04/25/opinion/elon-musk-donald-trump-influence.html",
       "author": "Ross Douthat",
@@ -26,6 +65,19 @@
       "link": "https://adamtooze.substack.com/p/top-links-1083-china-investing-in",
       "image": "https://substackcdn.com/image/fetch/$s_!tUa7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F076834d2-681e-4ce7-b9e7-1b45ba113817_1550x930.png",
       "publishedAt": "2026-04-25T10:45:50.000Z"
+    },
+    {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/hasan-piker-mainstream-left-postliberalism/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "Dark Woke",
+      "description": "On Hasan Piker and Trumpism.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/hasan-piker-mainstream-left-postliberalism/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/Hasan-EricTr-1.jpg?w=1024",
+      "publishedAt": "2026-04-24T22:38:36.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-443-obscurity-to-notoriety",
@@ -80,6 +132,19 @@
       "publishedAt": "2026-04-23T22:37:49.000Z"
     },
     {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/marco-rubio-vance-iran-cuba/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "Where’s Marco?",
+      "description": "The secretary of state keeps a curiously low profile on Iran.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/marco-rubio-vance-iran-cuba/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/Rubes.jpg?w=1024",
+      "publishedAt": "2026-04-23T21:23:55.000Z"
+    },
+    {
       "id": "john-ganz-https://www.unpopularfront.news/p/talking-to-ben-tarnoff-and-quinn",
       "author": "John Ganz",
       "outlet": "Unpopular Front",
@@ -91,6 +156,19 @@
       "link": "https://www.unpopularfront.news/p/talking-to-ben-tarnoff-and-quinn",
       "image": "",
       "publishedAt": "2026-04-23T13:32:10.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/what-is-muskism",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "What is \"Muskism\"?",
+      "description": "With Quinn Slobodian, Ben Tarnoff, and John Ganz",
+      "link": "https://maxread.substack.com/p/what-is-muskism",
+      "image": "",
+      "publishedAt": "2026-04-23T13:20:02.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/top-links-1081-time-for-a-cartel",
@@ -117,6 +195,19 @@
       "link": "https://www.nytimes.com/2026/04/21/opinion/israel-us-public-opinion.html",
       "image": "",
       "publishedAt": "2026-04-22T21:46:43.000Z"
+    },
+    {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/virginia-redistricting-warfare-republicans/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "Maximum Warfare, All the Time",
+      "description": "Lessons from Democrats’ Virginia redistricting win.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/virginia-redistricting-warfare-republicans/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/GettyImages-2262916206.jpg?w=1024",
+      "publishedAt": "2026-04-22T21:29:52.000Z"
     },
     {
       "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-442-global-imbalances-a",
@@ -158,6 +249,19 @@
       "publishedAt": "2026-04-22T10:45:51.000Z"
     },
     {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/trump-jr-vance-carlson-republican-nominee-2028/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "The Son Also Rises",
+      "description": "Is Donald Trump Jr. the GOP frontrunner in 2028?",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/trump-jr-vance-carlson-republican-nominee-2028/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/BFogs-421.jpg?w=1024",
+      "publishedAt": "2026-04-21T21:52:00.000Z"
+    },
+    {
       "id": "adam-tooze-https://adamtooze.substack.com/p/top-link-1079-the-tanker-convoy-to",
       "author": "Adam Tooze",
       "outlet": "Chartbook",
@@ -169,6 +273,19 @@
       "link": "https://adamtooze.substack.com/p/top-link-1079-the-tanker-convoy-to",
       "image": "https://substackcdn.com/image/fetch/$s_!Mx_t!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f26f9cd-2623-4b8c-ac53-eceb4e897d5b_856x1166.png",
       "publishedAt": "2026-04-21T10:40:42.000Z"
+    },
+    {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/trump-vance-conspiracy-2028-midterms/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "The Hidden Hand",
+      "description": "Right-wing conspiracy theorists are turning on Trump.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/trump-vance-conspiracy-2028-midterms/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/PizzaGate-1.jpg?w=1024",
+      "publishedAt": "2026-04-20T21:48:38.000Z"
     },
     {
       "id": "ross-douthat-https://www.nytimes.com/2026/04/18/opinion/orban-liberals-lessons.html",
@@ -208,6 +325,19 @@
       "link": "https://www.nytimes.com/2026/04/19/opinion/trum-christ-pope-image.html",
       "image": "",
       "publishedAt": "2026-04-20T16:35:34.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/what-im-reading-about-orban-and-hungary",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "What I'm reading about Orbán and Hungary, a postwar noir spy thriller set in ruined Frankfurt, and more",
+      "description": "Roundup 04/20/2026",
+      "link": "https://maxread.substack.com/p/what-im-reading-about-orban-and-hungary",
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/RpD6VBtApD8",
+      "publishedAt": "2026-04-20T15:28:03.000Z"
     },
     {
       "id": "david-french-https://www.nytimes.com/2026/04/18/opinion/hungary-election-orban-loses-trump-maga.html",
@@ -288,6 +418,19 @@
       "publishedAt": "2026-04-18T10:40:36.000Z"
     },
     {
+      "id": "max-read-https://maxread.substack.com/p/what-corporate-thrillers-tell-us",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "What corporate thrillers tell us about the '90s economy",
+      "description": "PLUS: Has Forum Brain crossed the gender divide?",
+      "link": "https://maxread.substack.com/p/what-corporate-thrillers-tell-us",
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/qk3PK3W_wvo",
+      "publishedAt": "2026-04-17T17:09:30.000Z"
+    },
+    {
       "id": "david-french-https://www.nytimes.com/2026/04/16/opinion/gambling-young-men-porn-society.html",
       "author": "David French",
       "outlet": "The New York Times",
@@ -314,17 +457,17 @@
       "publishedAt": "2026-04-17T10:34:40.000Z"
     },
     {
-      "id": "adam-tooze-https://adamtooze.substack.com/p/chartbook-441-the-two-faced-present",
-      "author": "Adam Tooze",
-      "outlet": "Chartbook",
-      "type": "Blog",
-      "sourceId": "adam-tooze",
-      "sourceUrl": "https://adamtooze.substack.com/feed",
-      "title": "Chartbook 441 The Two-Faced Present - A conversation about the “short twentieth century” – and the paradoxical twenty-first with Wang Hui (in collaboration with Equator magazine)",
-      "description": "In March in Beijing I had the privilege of meeting and talking with Professor Wang Hui of Tsinghua.",
-      "link": "https://adamtooze.substack.com/p/chartbook-441-the-two-faced-present",
-      "image": "https://substackcdn.com/image/fetch/$s_!PAb8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3f38733-c16e-4d67-87c5-390360ab2b09_2218x1474.png",
-      "publishedAt": "2026-04-17T10:29:30.000Z"
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/gabbard-blanche-hegseth-trump-cabinet-loyalty/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "The YOLO Phase",
+      "description": "An autocratic turning point.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/gabbard-blanche-hegseth-trump-cabinet-loyalty/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/YOLO.jpg?w=1024",
+      "publishedAt": "2026-04-16T22:48:35.000Z"
     },
     {
       "id": "jamelle-bouie-https://www.nytimes.com/2026/04/15/opinion/trump-iran-power-unitary-executive.html",
@@ -340,6 +483,32 @@
       "publishedAt": "2026-04-16T04:23:56.000Z"
     },
     {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/iran-war-strait-hormuz-trump-china-xi-taiwan/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "Hostage Swap",
+      "description": "Will Trump trade Taiwan for the Strait of Hormuz?",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/iran-war-strait-hormuz-trump-china-xi-taiwan/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/TrumpXiChina.jpg?w=1024",
+      "publishedAt": "2026-04-15T22:20:39.000Z"
+    },
+    {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/eric-swalwell-democratic-party-me-too/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "To Catch a Predator",
+      "description": "Eric Swalwell and the return of #MeToo.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/eric-swalwell-democratic-party-me-too/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/GettyImages-2271329441.jpg?w=1024",
+      "publishedAt": "2026-04-14T22:25:37.000Z"
+    },
+    {
       "id": "ross-douthat-https://www.nytimes.com/2026/04/14/opinion/trump-pope.html",
       "author": "Ross Douthat",
       "outlet": "The New York Times",
@@ -351,6 +520,32 @@
       "link": "https://www.nytimes.com/2026/04/14/opinion/trump-pope.html",
       "image": "",
       "publishedAt": "2026-04-14T22:13:50.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/a-noirish-road-thriller-about-violent",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "A noirish road thriller about violent teenagers, an underrated '90s conspiracy thriller with a great soundtrack, and more",
+      "description": "Roundup 04/14/2026",
+      "link": "https://maxread.substack.com/p/a-noirish-road-thriller-about-violent",
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/MHKQTlD0Fkg",
+      "publishedAt": "2026-04-14T14:29:00.000Z"
+    },
+    {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/donald-trump-pope-leo-xiv-catholic-church/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "The Schism",
+      "description": "Why the pontiff’s criticism bothers the president.",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/donald-trump-pope-leo-xiv-catholic-church/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/PopeLeo-4.jpg?w=1024",
+      "publishedAt": "2026-04-13T22:15:20.000Z"
     },
     {
       "id": "john-ganz-https://www.unpopularfront.news/p/hungry-hungry-hungarians-the-buckley",
@@ -392,6 +587,19 @@
       "publishedAt": "2026-04-10T15:26:17.000Z"
     },
     {
+      "id": "nick-catoggio-https://thedispatch.com/newsletter/boilingfrogs/american-allies-alienation-trump-nato/",
+      "author": "Nick Catoggio",
+      "outlet": "The Dispatch",
+      "type": "Colunas",
+      "sourceId": "nick-catoggio",
+      "sourceUrl": "https://thedispatch.com/author/nick-catoggio/feed/",
+      "title": "America Alone",
+      "description": "Which allies will the U.S. have left by 2029?",
+      "link": "https://thedispatch.com/newsletter/boilingfrogs/american-allies-alienation-trump-nato/",
+      "image": "https://thedispatch.com/wp-content/uploads/2026/04/TrumpWorld-1.jpg?w=1024",
+      "publishedAt": "2026-04-09T22:36:49.000Z"
+    },
+    {
       "id": "jamelle-bouie-https://www.nytimes.com/2026/04/04/opinion/trump-wars-iran-birthright-citizenship.html",
       "author": "Jamelle Bouie",
       "outlet": "The New York Times",
@@ -431,6 +639,19 @@
       "publishedAt": "2026-04-08T18:57:41.000Z"
     },
     {
+      "id": "max-read-https://maxread.substack.com/p/talking-the-dark-enlightenment-with",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "Talking the 'Dark Enlightenment' with John Ganz and Maya Vinokour",
+      "description": "Video of our conversation from Night of IDeas",
+      "link": "https://maxread.substack.com/p/talking-the-dark-enlightenment-with",
+      "image": "",
+      "publishedAt": "2026-04-07T16:09:00.000Z"
+    },
+    {
       "id": "david-french-https://www.nytimes.com/2026/04/05/opinion/easter-vigil-paschal-candle.html",
       "author": "David French",
       "outlet": "The New York Times",
@@ -455,6 +676,19 @@
       "link": "https://www.unpopularfront.news/p/dark-enlightenment-now",
       "image": "https://substack-video.s3.amazonaws.com/video_upload/post/193340357/d46a90a6-a2e8-40f6-949f-c9f1545ec304/transcoded-00359.png",
       "publishedAt": "2026-04-06T11:48:53.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/a-horror-adventure-set-in-dark-ages",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "A horror adventure set in Dark Ages England, a great new play about love and death, and more",
+      "description": "Roundup 04/06/2026",
+      "link": "https://maxread.substack.com/p/a-horror-adventure-set-in-dark-ages",
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/Cn9GQ8rqdQU",
+      "publishedAt": "2026-04-06T11:13:28.000Z"
     },
     {
       "id": "john-ganz-https://www.unpopularfront.news/p/king-of-the-stone-age",
@@ -494,6 +728,19 @@
       "link": "https://www.nytimes.com/2026/04/03/opinion/birthright-supreme-court-conversation-therapy.html",
       "image": "",
       "publishedAt": "2026-04-03T21:16:05.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/is-ubiquitous-ai-writing-inevitable",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "Is ubiquitous A.I. writing \"inevitable\"?",
+      "description": "On a weird few weeks of A.I.-writing scandals",
+      "link": "https://maxread.substack.com/p/is-ubiquitous-ai-writing-inevitable",
+      "image": "https://substackcdn.com/image/fetch/$s_!ZuuB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0e1e502-8bd2-49ca-aede-c81e86d336bf_330x301.jpeg",
+      "publishedAt": "2026-04-03T20:13:38.000Z"
     },
     {
       "id": "john-ganz-https://www.unpopularfront.news/p/birthright-and-wrong",
@@ -561,19 +808,6 @@
       "publishedAt": "2026-03-31T23:50:18.000Z"
     },
     {
-      "id": "david-french-https://www.nytimes.com/2026/03/29/opinion/free-speech-social-media-court-ruling.html",
-      "author": "David French",
-      "outlet": "The New York Times",
-      "type": "Colunas",
-      "sourceId": "david-french",
-      "sourceUrl": "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml",
-      "title": "Don’t Cheer Too Hard for the Facebook Verdicts",
-      "description": "Courts aren’t always the right answer to our digital problems.",
-      "link": "https://www.nytimes.com/2026/03/29/opinion/free-speech-social-media-court-ruling.html",
-      "image": "",
-      "publishedAt": "2026-03-30T18:15:02.000Z"
-    },
-    {
       "id": "jamelle-bouie-https://www.nytimes.com/2026/03/28/opinion/stephen-miller-birthright-citizenship-14th-amendment.html",
       "author": "Jamelle Bouie",
       "outlet": "The New York Times",
@@ -598,6 +832,19 @@
       "link": "https://www.unpopularfront.news/p/addendums-tenebrism-going-a-journey",
       "image": "https://substackcdn.com/image/fetch/$s_!_-4r!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2226df50-0313-40c2-a6e9-38d0a73bf914_960x719.jpeg",
       "publishedAt": "2026-03-30T11:16:03.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/a-sharp-new-book-on-ai-psyops-and",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "A sharp new book on A.I., psyops, and magic; an entertaining video essay on video stores; and more",
+      "description": "Roundup 03/29/2026",
+      "link": "https://maxread.substack.com/p/a-sharp-new-book-on-ai-psyops-and",
+      "image": "https://substackcdn.com/image/fetch/$s_!YYcm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2624f182-c7af-48ca-ad87-34e4b18aec90_1668x934.png",
+      "publishedAt": "2026-03-29T12:09:41.000Z"
     },
     {
       "id": "ross-douthat-https://www.nytimes.com/2026/03/28/opinion/religious-revival-america.html",
@@ -639,6 +886,19 @@
       "publishedAt": "2026-03-27T09:49:16.000Z"
     },
     {
+      "id": "max-read-https://maxread.substack.com/p/soy-right-ascendant-872",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "Soy Right ascendant",
+      "description": "A Read Max re-run",
+      "link": "https://maxread.substack.com/p/soy-right-ascendant-872",
+      "image": "https://substackcdn.com/image/fetch/$s_!Rj2Z!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd258e80f-bdd0-4155-acbd-90efc5c18234_1178x1292.png",
+      "publishedAt": "2026-03-26T14:46:09.000Z"
+    },
+    {
       "id": "jamelle-bouie-https://www.nytimes.com/video/opinion/100000010801529/trumps-brute-force-imperialism.html",
       "author": "Jamelle Bouie",
       "outlet": "The New York Times",
@@ -663,6 +923,19 @@
       "link": "https://www.nytimes.com/2026/03/24/opinion/iran-trump-hormuz.html",
       "image": "",
       "publishedAt": "2026-03-24T21:20:51.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/a-perfect-cold-war-spy-thriller-a",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "A perfect Cold-War spy thriller, a malevolent folk-horror flick with a fantastic soundtrack, and more",
+      "description": "Roundup 03/23/2026",
+      "link": "https://maxread.substack.com/p/a-perfect-cold-war-spy-thriller-a",
+      "image": "https://substackcdn.com/image/fetch/$s_!WUqO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28757f55-a526-4274-a591-6b4e957cba0d_1280x706.jpeg",
+      "publishedAt": "2026-03-23T16:31:06.000Z"
     },
     {
       "id": "john-ganz-https://www.unpopularfront.news/p/perspectives-on-iran-hans-kohn-leaves",
@@ -691,17 +964,30 @@
       "publishedAt": "2026-03-21T16:43:04.000Z"
     },
     {
-      "id": "john-ganz-https://www.unpopularfront.news/p/grand-delusion",
-      "author": "John Ganz",
-      "outlet": "Unpopular Front",
+      "id": "max-read-https://maxread.substack.com/p/talking-iran-and-taking-questions",
+      "author": "Max Read",
+      "outlet": "Read Max",
       "type": "Blog",
-      "sourceId": "john-ganz",
-      "sourceUrl": "https://www.unpopularfront.news/feed",
-      "title": "Grand Delusion",
-      "description": "The Trumpist Intellectuals Wake Up",
-      "link": "https://www.unpopularfront.news/p/grand-delusion",
-      "image": "https://substackcdn.com/image/fetch/$s_!a8AS!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0e2ad597-1a1e-4c5b-be30-d37b49502770_1224x1224.png",
-      "publishedAt": "2026-03-20T14:45:25.000Z"
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "Talking Iran and taking questions with John Ganz",
+      "description": "A recording of our livestream for paying subscribers",
+      "link": "https://maxread.substack.com/p/talking-iran-and-taking-questions",
+      "image": "",
+      "publishedAt": "2026-03-19T13:28:38.000Z"
+    },
+    {
+      "id": "max-read-https://maxread.substack.com/p/a-captivating-enigmatic-period-family",
+      "author": "Max Read",
+      "outlet": "Read Max",
+      "type": "Blog",
+      "sourceId": "max-read",
+      "sourceUrl": "https://maxread.substack.com/feed",
+      "title": "A captivating, enigmatic, period family saga; a stunning, hand-drawn, surrealist animated masterpiece; and more",
+      "description": "Roundup 03/17/2026 (Plus: a bonus book rec!)",
+      "link": "https://maxread.substack.com/p/a-captivating-enigmatic-period-family",
+      "image": "https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/asisabwjnmetkegqfqnz",
+      "publishedAt": "2026-03-17T13:40:48.000Z"
     }
   ],
   "errors": []

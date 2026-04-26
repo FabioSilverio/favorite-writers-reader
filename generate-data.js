@@ -37,6 +37,20 @@ const feeds = [
     outlet: "Unpopular Front",
     type: "Blog",
     url: "https://www.unpopularfront.news/feed"
+  },
+  {
+    id: "nick-catoggio",
+    author: "Nick Catoggio",
+    outlet: "The Dispatch",
+    type: "Colunas",
+    url: "https://thedispatch.com/author/nick-catoggio/feed/"
+  },
+  {
+    id: "max-read",
+    author: "Max Read",
+    outlet: "Read Max",
+    type: "Blog",
+    url: "https://maxread.substack.com/feed"
   }
 ];
 
