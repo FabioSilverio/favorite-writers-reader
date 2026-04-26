@@ -193,7 +193,7 @@ async function fetchLivePosts() {
   const posts = groups.flat();
 
   if (!posts.length) {
-    throw new Error("Nao consegui atualizar os feeds ao vivo.");
+    throw new Error("Não consegui atualizar os feeds ao vivo.");
   }
 
   posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
@@ -232,7 +232,7 @@ async function fetchLiveFeed(feed) {
 
   const payload = await response.json();
   if (payload.status !== "ok" || !Array.isArray(payload.items)) {
-    throw new Error(payload.message || "Feed ao vivo nao retornou posts.");
+    throw new Error(payload.message || "Feed ao vivo não retornou posts.");
   }
 
   return payload.items.slice(0, 12).map((item) => ({
@@ -331,7 +331,7 @@ async function fetchAtlanticAuthorPosts(feed) {
     });
   }
 
-  if (!posts.length) throw new Error("Atlantic nao retornou artigos.");
+  if (!posts.length) throw new Error("Atlantic não retornou artigos.");
   return posts.slice(0, 12);
 }
 
