@@ -181,20 +181,16 @@ async function fetchSnapshot() {
 }
 
 async function fetchLivePosts() {
-  const settled = await Promise.allSettled(liveFeeds.map(fetchLiveFeed));
-  const posts = [];
-  const errors = [];
-
-  settled.forEach((result, index) => {
-    if (result.status === "fulfilled") {
-      posts.push(...result.value);
-    } else {
-      errors.push({
-        source: liveFeeds[index].author,
-        message: result.reason?.message || "Nao foi possivel carregar o feed."
-      });
-    }
-  });
+  const groups = await Promise.all(
+    liveFeeds.map(async (feed) => {
+      try {
+        return await fetchLiveFeed(feed);
+      } catch (error) {
+        throw new Error(`${feed.author}: ${error.message || "falha ao atualizar"}`);
+      }
+    })
+  );
+  const posts = groups.flat();
 
   if (!posts.length) {
     throw new Error("Nao consegui atualizar os feeds ao vivo.");
@@ -205,7 +201,7 @@ async function fetchLivePosts() {
   return {
     fetchedAt: new Date().toISOString(),
     posts,
-    errors
+    errors: []
   };
 }
 
@@ -288,16 +284,13 @@ function textFromNode(node, selector) {
 }
 
 async function fetchReaderPosts(feed) {
-  const response = await fetch(`${feed.readerUrl}?t=${Date.now()}`, { cache: "no-store" });
+  const response = await fetch(feed.readerUrl, { cache: "no-store" });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
 
   const markdown = (await response.text()).replaceAll("\\n", "\n");
   const shellPosts = parseReaderFeed(markdown).slice(0, 12);
-  const hydrated = await Promise.all(
-    shellPosts.map((post) => hydrateReaderPost(post, feed).catch(() => post))
-  );
 
-  return hydrated.map((post) => ({
+  return shellPosts.map((post) => ({
     id: `${feed.id}-${post.link}`,
     author: feed.author,
     outlet: feed.outlet,
@@ -357,39 +350,11 @@ function parseReaderFeed(markdown) {
   return posts;
 }
 
-async function hydrateReaderPost(post, feed) {
-  const response = await fetch(`https://r.jina.ai/http://r.jina.ai/http://${post.link}`, { cache: "no-store" });
-  if (!response.ok) return post;
-
-  const markdown = await response.text();
-  const title = markdown.match(/^Title:\s*(.+)$/m)?.[1]?.trim();
-  const published = markdown.match(/^Published Time:\s*(.+)$/m)?.[1]?.trim();
-  const description = firstUsefulParagraph(markdown, feed.author);
-
-  return {
-    ...post,
-    title,
-    image: "",
-    description,
-    publishedAt: published ? new Date(published).toISOString() : post.publishedAt
-  };
-}
-
 function titleFromUrl(url) {
   const slug = url.split("/").filter(Boolean).pop() || "Sem titulo";
   return slug
     .replace(/-/g, " ")
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
-function firstUsefulParagraph(markdown, author) {
-  const body = markdown.split("Markdown Content:")[1] || "";
-  const paragraphs = body
-    .split(/\n{2,}/)
-    .map((item) => cleanText(item))
-    .filter((item) => item && !item.startsWith("Image ") && !item.includes(author) && item.length > 40);
-
-  return paragraphs[0] || "";
 }
 
 function renderAuthorFilters() {
