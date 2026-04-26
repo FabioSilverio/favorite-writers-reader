@@ -50,7 +50,8 @@ const feeds = [
     author: "Max Read",
     outlet: "Read Max",
     type: "Blog",
-    url: "https://maxread.substack.com/feed"
+    url: "https://maxread.substack.com/feed",
+    fallbackUrl: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmaxread.substack.com%2Ffeed"
   }
 ];
 
