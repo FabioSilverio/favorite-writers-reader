@@ -1,4 +1,41 @@
 const READ_STORAGE_KEY = "favorite-writers-reader:read-ids";
+const liveFeeds = [
+  {
+    id: "ross-douthat",
+    author: "Ross Douthat",
+    outlet: "The New York Times",
+    type: "Colunas",
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/ross-douthat/rss.xml"
+  },
+  {
+    id: "jamelle-bouie",
+    author: "Jamelle Bouie",
+    outlet: "The New York Times",
+    type: "Colunas",
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/jamelle-bouie/rss.xml"
+  },
+  {
+    id: "david-french",
+    author: "David French",
+    outlet: "The New York Times",
+    type: "Colunas",
+    url: "https://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/by/david-french/rss.xml"
+  },
+  {
+    id: "adam-tooze",
+    author: "Adam Tooze",
+    outlet: "Chartbook",
+    type: "Blog",
+    url: "https://adamtooze.substack.com/feed"
+  },
+  {
+    id: "john-ganz",
+    author: "John Ganz",
+    outlet: "Unpopular Front",
+    type: "Blog",
+    url: "https://www.unpopularfront.news/feed"
+  }
+];
 
 const state = {
   posts: [],
@@ -59,9 +96,7 @@ async function loadPosts(force = false) {
   setLoading(true);
 
   try {
-    const response = await fetch(`data/posts.json${force ? `?t=${Date.now()}` : ""}`);
-    if (!response.ok) throw new Error("Falha ao buscar feeds");
-    const data = await response.json();
+    const data = force ? await fetchLivePosts() : await fetchSnapshot();
     state.posts = data.posts;
 
     if (state.authors.size === 0) {
@@ -69,7 +104,7 @@ async function loadPosts(force = false) {
       renderAuthorFilters();
     }
 
-    statusText.textContent = "Mostrando o snapshot mais recente publicado.";
+    statusText.textContent = force ? "Feeds atualizados ao vivo." : "Mostrando o snapshot mais recente publicado.";
     updatedText.textContent = `Atualizado em ${formatDateTime(data.fetchedAt)}`;
     renderErrors(data.errors);
     render();
@@ -79,6 +114,66 @@ async function loadPosts(force = false) {
   } finally {
     setLoading(false);
   }
+}
+
+async function fetchSnapshot() {
+  const response = await fetch(`data/posts.json?t=${Date.now()}`);
+  if (!response.ok) throw new Error("Falha ao buscar feeds");
+  return response.json();
+}
+
+async function fetchLivePosts() {
+  const settled = await Promise.allSettled(liveFeeds.map(fetchLiveFeed));
+  const posts = [];
+  const errors = [];
+
+  settled.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      posts.push(...result.value);
+    } else {
+      errors.push({
+        source: liveFeeds[index].author,
+        message: result.reason?.message || "Nao foi possivel carregar o feed."
+      });
+    }
+  });
+
+  if (!posts.length) {
+    throw new Error("Nao consegui atualizar os feeds ao vivo.");
+  }
+
+  posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+  return {
+    fetchedAt: new Date().toISOString(),
+    posts,
+    errors
+  };
+}
+
+async function fetchLiveFeed(feed) {
+  const url = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+
+  const payload = await response.json();
+  if (payload.status !== "ok" || !Array.isArray(payload.items)) {
+    throw new Error(payload.message || "Feed ao vivo nao retornou posts.");
+  }
+
+  return payload.items.slice(0, 12).map((item) => ({
+    id: `${feed.id}-${item.link || item.guid || item.title}`,
+    author: feed.author,
+    outlet: feed.outlet,
+    type: feed.type,
+    sourceId: feed.id,
+    sourceUrl: feed.url,
+    title: cleanText(item.title || "Sem titulo"),
+    description: cleanText(item.description || item.content || ""),
+    link: item.link || "",
+    image: item.thumbnail || "",
+    publishedAt: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString()
+  }));
 }
 
 function renderAuthorFilters() {
@@ -215,6 +310,14 @@ function formatDateTime(value) {
     hour: "2-digit",
     minute: "2-digit"
   }).format(new Date(value));
+}
+
+function cleanText(value) {
+  return String(value || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .trim();
 }
 
 function escapeHtml(value) {
